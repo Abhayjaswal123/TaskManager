@@ -41,7 +41,6 @@ const Home = () => {
     return (
         <div className="min-h-screen bg-[#050818] text-white relative overflow-hidden flex flex-col">
 
-            {/* Grid overlay */}
             <div
                 className="fixed inset-0 pointer-events-none z-0"
                 style={{
@@ -51,13 +50,11 @@ const Home = () => {
                 }}
             />
 
-            {/* Orbs */}
             <div className="fixed top-[-120px] left-[-120px] w-[420px] h-[420px] rounded-full pointer-events-none z-0"
                 style={{ background: "radial-gradient(circle, rgba(0,255,198,0.18), transparent 70%)", filter: "blur(80px)" }} />
             <div className="fixed bottom-[-80px] right-[-80px] w-[340px] h-[340px] rounded-full pointer-events-none z-0"
                 style={{ background: "radial-gradient(circle, rgba(0,184,255,0.14), transparent 70%)", filter: "blur(80px)" }} />
 
-            {/* Navbar */}
             <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-4 flex items-center justify-between border-b border-white/[0.06]"
                 style={{ background: "rgba(5,8,24,0.8)", backdropFilter: "blur(20px)" }}>
                 <span className="text-lg font-extrabold tracking-tight bg-gradient-to-r from-[#00FFC6] to-[#00B8FF] bg-clip-text text-transparent">
@@ -113,27 +110,9 @@ const Home = () => {
                     </button>
                 </div>
 
-                {/* Stats bar */}
-                <div className="flex divide-x divide-white/[0.06] border border-white/[0.06] rounded-2xl overflow-hidden bg-white/[0.02] backdrop-blur-sm w-full max-w-md mb-12">
-                    {[
-                        { num: "12k+", label: "Active Users" },
-                        { num: "98k", label: "Tasks Done" },
-                        { num: "4.9★", label: "Rating" },
-                    ].map(({ num, label }) => (
-                        <div key={label} className="flex-1 py-4 text-center">
-                            <span className="block text-xl font-bold bg-gradient-to-r from-[#00FFC6] to-[#00B8FF] bg-clip-text text-transparent"
-                                style={{ fontFamily: "'Syne', sans-serif" }}>
-                                {num}
-                            </span>
-                            <span className="block text-[10px] text-[#4a5a72] uppercase tracking-widest mt-1">{label}</span>
-                        </div>
-                    ))}
-                </div>
 
-                {/* Divider */}
                 <div className="w-px h-10 bg-gradient-to-b from-transparent via-[#00FFC6]/30 to-transparent mb-8" />
 
-                {/* Features */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-xl">
                     {features.map(({ icon, iconBg, title, desc }) => (
                         <div
