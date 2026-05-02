@@ -36,12 +36,14 @@ cd Backend
 npm install
 npm start
 
-## .env
+### .env
+```bash
 PORT=5000
 MONGO_URI=your_mongodb_url
 JWT_SECRET=your_secret
 
 ### Frontend
+```bash
 cd Frontend
 npm install
 npm run dev
