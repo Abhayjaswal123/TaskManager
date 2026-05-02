@@ -67,7 +67,7 @@ const Home = () => {
             </nav>
 
             {/* Main content */}
-            <main className="relative z-10 flex flex-col items-center justify-center flex-1 px-4 pt-28 pb-16 text-center">
+            <main className="relative z-10 flex flex-col items-center justify-center flex-1 px-4 pt-28 pb-5 text-center">
 
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00FFC6]/20 bg-[#00FFC6]/05 text-[#00FFC6] text-xs font-medium tracking-wide mb-7">
@@ -111,8 +111,6 @@ const Home = () => {
                 </div>
 
 
-                <div className="w-px h-10 bg-gradient-to-b from-transparent via-[#00FFC6]/30 to-transparent mb-8" />
-
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full max-w-xl">
                     {features.map(({ icon, iconBg, title, desc }) => (
                         <div
@@ -133,8 +131,7 @@ const Home = () => {
 
             </main>
 
-            {/* Footer */}
-            <footer className="relative z-10 text-center pb-6">
+            <footer className="relative z-10 text-center pb-2">
                 <p className="text-xs text-[#4a5a72]/60">Smart prioritization powered ⚡</p>
             </footer>
         </div>
