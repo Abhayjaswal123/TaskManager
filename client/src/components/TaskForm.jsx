@@ -80,11 +80,11 @@ const TaskForm = ({ onAdd }) => {
                     <select
                         value={form.importance}
                         onChange={(e) => setForm({ ...form, importance: Number(e.target.value) })}
-                        className={inputClass}
+                        className={`${inputClass} appearance-none bg-white/[0.05] text-white border border-white/[0.08] focus:outline-none focus:border-[#00FFC6]/40 focus:bg-white/[0.07]`}
                     >
-                        <option value={1}>Low</option>
-                        <option value={2}>Medium</option>
-                        <option value={3}>High</option>
+                        <option value={1} className="bg-[#0b1020] text-white">Low</option>
+                        <option value={2} className="bg-[#0b1020] text-white">Medium</option>
+                        <option value={3} className="bg-[#0b1020] text-white">High</option>
                     </select>
                 </div>
             </div>
