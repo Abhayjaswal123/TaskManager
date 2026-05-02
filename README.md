@@ -31,19 +31,18 @@ This is a **smart task analyzer app** that can automatically help identify and o
 ## ⚙️ Setup
 
 ### Backend
-```bash
 cd Backend
 npm install
 npm start
 
 ### .env
-```bash
+
 PORT=5000
 MONGO_URI=your_mongodb_url
 JWT_SECRET=your_secret
 
 ### Frontend
-```bash
+
 cd Frontend
 npm install
 npm run dev
