@@ -1,42 +1,47 @@
-# Task Manager App
+# 🚀 Task Manager App (MERN Stack)
 
-## Features
-- User-friendly interface for task management.
-- Ability to add, update, and delete tasks.
-- Task categorization and tagging.
-- Supports deadlines and reminders.
-- Dark mode and light mode.
+A full-stack Task Manager web application built using the MERN stack with authentication, protected routes, and a modern UI.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Abhayjaswal123/TaskManager.git
-   cd TaskManager
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+This is a **smart task analyzer app** that can automatically help identify and organize tasks based on their priority, making task management more efficient and structured.
 
-## Usage
-- Run the application with:
-   ```bash
-   npm start
-   ```
-- Access the application in your web browser at `http://localhost:3000`.
+---
 
-## Contribution Guidelines
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add some feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/YourFeature
-   ```
-5. Open a pull request.
+## 🌐 Live Demo
+👉 https://taskmanager-frontend-9qzd.onrender.com
+
+---
+
+## ✨ Features
+- 🔐 User Login & Register (JWT Authentication)
+- 🧠 Smart Task Analyzer (identifies task priority)
+- 🛡️ Protected Routes (Dashboard access only for logged users)
+- 📋 Create, Read, Update, Delete Tasks
+- ⚡ REST API integration (Node + Express)
+- 🎨 Clean dark UI with Tailwind CSS
+- 📱 Fully responsive design
+
+---
+
+## 🛠️ Tech Stack
+**Frontend:** React, React Router, Tailwind CSS, Context API  
+**Backend:** Node.js, Express.js, MongoDB, JWT, Bcrypt  
+
+---
+
+## ⚙️ Setup
+
+### Backend
+```bash id="setup_backend"
+cd Backend
+npm install
+npm start
+
+## .env
+PORT=5000
+MONGO_URI=your_mongodb_url
+JWT_SECRET=your_secret
+
+### Frontend
+cd Frontend
+npm install
+npm run dev
