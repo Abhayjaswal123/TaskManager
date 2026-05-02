@@ -31,6 +31,7 @@ This is a **smart task analyzer app** that can automatically help identify and o
 ## ⚙️ Setup
 
 ### Backend
+```bash
 cd Backend
 npm install
 npm start
